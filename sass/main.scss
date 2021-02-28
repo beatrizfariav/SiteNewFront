@@ -1,0 +1,28 @@
+//ABSTRACTS
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+//BASE
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+//ABSTRACTS
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/hero";
+@import "layout/navigation";
+
+//COMPONENTS
+@import "components/button";
+@import "components/wave";
+@import "components/benefit";
+@import "components/pricing";
+@import "components/whatsapp";
+@import "components/form";
+
+//PAGES
+@import "pages/home";
