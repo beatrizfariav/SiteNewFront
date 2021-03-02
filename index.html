@@ -17,18 +17,18 @@
 </head>
 
 <body>
-    <nav class="header">
+    <nav class="header" id="navbar">
         <div class="header__container">
             <input type="checkbox" name="" id="check">
             <div class="header__logo-container">
-                <img src="./img/logo-nav.png" alt="Agência New Front" class="header__logo">
+                <a href="index.html"><img src="./img/logo-nav.png" alt="Agência New Front" class="header__logo"></a>
             </div>
             <div class="header__nav-btn">
 
                 <div class="header__nav-links">
                     <ul>
                         <li class="header__nav-link" style="--i: .6s">
-                            <a href="#">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li class="header__nav-link" style="--i: .85s">
                             <a href="#">Serviços <i class="fas fa-caret-down"></i></a>
@@ -85,18 +85,19 @@
     </nav>
     <header class="hero">
         <div class="hero__content">
-            <h1 class="heading heading__primary">
+            <h1 class="heading heading__primary animate-hero">
                 Quer um site <br class="hero__hidden">
                 <span class="txt-rotate span-typing" data-period="2000"
                     data-rotate='["profissional?", "responsivo?", "dinâmico?", "bonito?" ]'></span>
             </h1>
-            <p class="hero__txt">Agência digital especializada no desenvolvimento de sites profissionais, que
+            <p class="hero__txt animate-hero">Agência digital especializada no desenvolvimento de sites profissionais,
+                que
                 poderão possibilitar os melhores resultados para o seu negócio através da Web.
             </p>
-            <a href="#" class="btn btn--pink btn--animated">Orçamento online</a>
+            <a href="#" class="btn btn--pink animate-hero">Orçamento online</a>
         </div>
         <div class="hero__img">
-            <img src="./img/svg/hero-img.svg" alt="Desenvolvedores Web">
+            <img src="./img/svg/hero-img.svg" alt="Desenvolvedores Web" class="img-float">
         </div>
     </header>
 
@@ -109,11 +110,11 @@
     </section>
 
     <section class="services">
-        <h2 class="u-margin-top-medium heading heading__secondary">Nossos <span
+        <h2 class="u-margin-top-medium heading heading__secondary animate-services">Nossos <span
                 class="heading__secondary-bold">Serviços</span></h2>
         <div class="services__container">
             <div class="services__card">
-                <div class="services__box">
+                <div class="services__box animate-services">
                     <div class="services__content">
                         <div class="services__number">01</div>
                         <h3 class="heading heading__tertiary">Sites Profissionais</h3>
@@ -127,7 +128,7 @@
                 </div>
             </div>
             <div class="services__card">
-                <div class="services__box">
+                <div class="services__box animate-services">
                     <div class="services__content">
                         <div class="services__number">02</div>
                         <h3 class="heading heading__tertiary">Landing Pages</h3>
@@ -139,7 +140,7 @@
                 </div>
             </div>
             <div class="services__card">
-                <div class="services__box">
+                <div class="services__box animate-services">
                     <div class="services__content">
                         <div class="services__number">03</div>
                         <h3 class="heading heading__tertiary">E-commerce</h3>
@@ -151,7 +152,7 @@
                 </div>
             </div>
             <div class="services__card">
-                <div class="services__box">
+                <div class="services__box animate-services">
                     <div class="services__content">
                         <div class="services__number">04</div>
                         <h3 class="heading heading__tertiary">Artes para Redes Sociais</h3>
@@ -163,7 +164,7 @@
                 </div>
             </div>
             <div class="services__card">
-                <div class="services__box">
+                <div class="services__box animate-services">
                     <div class="services__content">
                         <div class="services__number">05</div>
                         <h3 class="heading heading__tertiary">Cartão Virtual Interativo</h3>
@@ -175,7 +176,7 @@
                 </div>
             </div>
             <div class="services__card">
-                <div class="services__box">
+                <div class="services__box animate-services">
                     <div class="services__content">
                         <div class="services__number">06</div>
                         <h3 class="heading heading__tertiary">Cardápio Digital Interativo </h3>
@@ -198,10 +199,10 @@
     </div>
 
     <section class="benefits">
-        <h2 class="heading heading__secondary benefits__heading">
+        <h2 class="heading heading__secondary benefits__heading animate-benefits">
             <span class="heading__secondary-bold">Benefícios</span> dos nossos sites
         </h2>
-        <div class="benefits__container">
+        <div class="benefits__container animate-benefits">
             <div class="benefit">
                 <svg class="benefit__icon">
                     <use xlink:href="./img/svg/icons/spritebenefits.svg#icon-mobile"></use>
@@ -239,39 +240,44 @@
 
     <section class="agency">
         <div class="agency__img">
-            <img src="./img/svg/agency-img.svg" alt="Desenvolvedores Web">
+            <img src="./img/svg/agency-img.svg" alt="Desenvolvedores Web" class="img-float">
         </div>
         <div class="agency__container">
-            <h2 class="heading heading__secondary">A nossa <span class="heading__secondary-bold">Agência</span></h2>
-            <p class="agency__txt">
+            <h2 class="heading heading__secondary animate-agency">A nossa <span
+                    class="heading__secondary-bold">Agência</span></h2>
+            <p class="agency__txt animate-agency">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quam nibh, tempor vel suscipit vel,
                 convallis ut ante. Fusce risus neque, commodo in condimentum ac, dignissim id ligula. Nullam eget sem in
                 est condimentum pretium vitae sit amet sapien.
             </p>
             <div class="benefit agency__benefit">
-                <div class="benefit__icon agency__icon">
+                <div class="benefit__icon agency__icon animate-agency">
                     <span><i class="fas fa-thumbs-up"></i></span>
                 </div>
-                <h4 class="heading heading__fourth benefit__heading">Satisfação dos nossos clientes</h4>
-                <p class="benefit__txt">Foco nos resultados para o seu negócio, através de uma boa comunicação do início
+                <h4 class="heading heading__fourth benefit__heading animate-agency">Satisfação dos nossos clientes</h4>
+                <p class="benefit__txt animate-agency">Foco nos resultados para o seu negócio, através de uma boa
+                    comunicação do início
                     ao fim do projeto!
                 </p>
             </div>
             <div class="benefit agency__benefit">
-                <div class="benefit__icon agency__icon">
+                <div class="benefit__icon agency__icon animate-agency">
                     <span><i class="fas fa-dollar-sign"></i></span>
                 </div>
-                <h4 class="heading heading__fourth benefit__heading">Ótimo custo benefício</h4>
-                <p class="benefit__txt">Foco nos resultados para o seu negócio, através de uma boa comunicação do início
+                <h4 class="heading heading__fourth benefit__heading animate-agency">Ótimo custo benefício</h4>
+                <p class="benefit__txt animate-agency">Foco nos resultados para o seu negócio, através de uma boa
+                    comunicação do início
                     ao fim do projeto!
                 </p>
             </div>
             <div class="benefit agency__benefit">
-                <div class="benefit__icon agency__icon">
+                <div class="benefit__icon agency__icon animate-agency">
                     <span><i class="fas fa-comments"></i></span>
                 </div>
-                <h4 class="heading heading__fourth benefit__heading">Sempre à disposição para atendê-los!</h4>
-                <p class="benefit__txt">Foco nos resultados para o seu negócio, através de uma boa comunicação do início
+                <h4 class="heading heading__fourth benefit__heading animate-agency">Sempre à disposição para atendê-los!
+                </h4>
+                <p class="benefit__txt animate-agency">Foco nos resultados para o seu negócio, através de uma boa
+                    comunicação do início
                     ao fim do projeto!
                 </p>
             </div>
@@ -279,10 +285,10 @@
     </section>
 
     <section id="pricing-table">
-        <h2 class="heading heading__secondary benefits__heading">
+        <h2 class="heading heading__secondary benefits__heading animate-pricing">
             <span class="heading__secondary-bold">Qual tipo de site </span>é o melhor para você?
         </h2>
-        <div class="pricing pricing-palden">
+        <div class="pricing pricing-palden animate-pricing">
             <div class="pricing-item features-item ja-animate" data-animation="move-from-bottom" data-delay="item-0"
                 style="min-height: 497px;">
                 <div class="pricing-deco">
@@ -386,14 +392,14 @@
 
     <div class="process-home">
         <div class="process-home__content">
-            <p class="process-home__topline">Clique abaixo para saber</p>
-            <h2 class="heading heading__secondary process-home__heading">
+            <p class="process-home__topline animate-process">Clique abaixo para saber</p>
+            <h2 class="heading heading__secondary process-home__heading animate-process">
                 Como funciona o <span class="heading__secondary-bold">processo de criação de websites!</span>
             </h2>
-            <a href="#" class="btn btn--blue btn--animated">Saiba mais</a>
+            <a href="#" class="btn btn--blue btn--animated animate-process">Saiba mais</a>
         </div>
 
-        <img class="process-home__img " src="./img/svg/process-img.svg" alt="Processo de criação de sites">
+        <img class="process-home__img img-float" src="./img/svg/process-img.svg" alt="Processo de criação de sites">
     </div>
 
     <div class="wave-svg">
@@ -405,12 +411,12 @@
     </div>
 
     <div class="testimonials">
-        <h2 class="heading heading__secondary benefits__heading">
+        <h2 class="heading heading__secondary benefits__heading animate-testimonial">
             O que os nossos clientes
             <span class="heading__secondary-bold">estão dizendo?</span>
         </h2>
         <div class="testimonials__wrap">
-            <div class="testimonials__box">
+            <div class="testimonials__box animate-testimonial">
                 <span class="testimonials__icon"><i class="fas fa-quote-left"></i></span>
                 <p class="testimonials__testimony">
                     Doggo ipsum shooberino heck length boy heckin good boys doge very
@@ -424,7 +430,7 @@
                     <p class="testimonials__footer-function">Escola Lemon Tree</p>
                 </div>
             </div>
-            <div class="testimonials__box">
+            <div class="testimonials__box animate-testimonial">
                 <span class="testimonials__icon"><i class="fas fa-quote-left"></i></span>
                 <p class="testimonials__testimony">
                     Doggo ipsum shooberino heck length boy heckin good boys doge very
@@ -449,11 +455,11 @@
     </div>
 
     <section class="contact">
-        <h2 class="heading heading__secondary">
+        <h2 class="heading heading__secondary animate-contact">
             Vamos
             <span class="heading__secondary-bold">conversar?</span>
         </h2>
-        <div class="contact__wrap">
+        <div class="contact__wrap animate-contact">
             <div class="contact__box">
                 <div class="contact__container">
                     <div class="contact__row100">
@@ -505,7 +511,7 @@
                 </div>
             </div>
             <div class="contact__box">
-                <img src="./img/svg/form.svg" alt="Fale Conosco" class="contact__img">
+                <img src="./img/svg/form.svg" alt="Fale Conosco" class="contact__img img-float">
             </div>
         </div>
     </section>
@@ -565,7 +571,8 @@
         <p>Copyright &copy; 2021 | Agência Digital <a class="copyright__link" href="#">New Front</a></p>
     </div>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
 

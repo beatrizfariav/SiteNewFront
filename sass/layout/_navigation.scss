@@ -1,3 +1,7 @@
+#navbar {
+  transition: all 0.5s;
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -11,7 +15,7 @@
     max-width: 95vw;
     padding: 0 3.2rem;
 
-    height: 4.8rem;
+    height: 6rem;
     margin: 0 auto;
     display: flex;
     position: relative;
@@ -22,6 +26,7 @@
 
     display: flex;
     align-items: center;
+    padding: 1rem 0;
   }
 
   &__nav-btn {
@@ -84,7 +89,7 @@
   }
 
   &__nav-link > a {
-    line-height: 4.8rem;
+    line-height: 6rem;
     color: $color-font-dark;
     padding: 0 1.3rem;
     letter-spacing: 1px;
@@ -114,7 +119,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    width: 16rem;
+    width: 22rem;
     transform: translateY(10px);
     opacity: 0;
     pointer-events: none;
@@ -262,6 +267,10 @@
 //MEDIA QUERIES
 
 @media (max-width: 920px) {
+  .header__logo-container img {
+    transform: scale(0.8);
+  }
+
   .header__hamburger-menu-container {
     display: flex;
   }
@@ -271,8 +280,8 @@
 
   .header__nav-btn {
     position: fixed;
-    height: calc(100vh - 4.8rem);
-    top: 4.8rem;
+    height: calc(100vh - 6rem);
+    top: 6rem;
     left: 0;
     width: 100%;
     background-color: #f3f5f7;

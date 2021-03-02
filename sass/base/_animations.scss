@@ -20,3 +20,14 @@
     transform: translateY(0px);
   }
 }
+
+// animation for the image
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
