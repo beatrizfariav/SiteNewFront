@@ -22,6 +22,14 @@
   50% {
     transform: translateY(0); } }
 
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1; }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0; } }
+
 *,
 *::after,
 *::before {
@@ -859,6 +867,103 @@ body {
 
 .pricing-palden .pricing-item--featured .pricing-deco {
   padding: 5em 0 8.885em 0; }
+
+.hero-secondary {
+  background-color: #008f95;
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+  color: #ffffff;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
+  .hero-secondary__wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .hero-secondary__title {
+    font-size: 5rem;
+    z-index: 1; }
+  .hero-secondary__topline {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 2; }
+
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #006366;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 10s ease-in forwards infinite; }
+  .cube:nth-child(2n) {
+    border-color: #00e2eb; }
+  .cube:nth-child(2) {
+    left: 25vw;
+    top: 40vh; }
+  .cube:nth-child(3) {
+    animation-delay: 2s;
+    left: 75vw;
+    top: 50vh; }
+  .cube:nth-child(4) {
+    animation-delay: 4s;
+    left: 90vw;
+    top: 10vh; }
+  .cube:nth-child(5) {
+    animation-delay: 6s;
+    left: 10vw;
+    top: 85vh; }
+  .cube:nth-child(6) {
+    animation-delay: 8s;
+    left: 50vw;
+    top: 10vh; }
+
+.arrows {
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  margin-left: -20px;
+  bottom: 20px;
+  margin-bottom: -10rem; }
+
+.arrows path {
+  stroke: #ffffff;
+  fill: transparent;
+  stroke-width: 3px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; }
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); }
+  80% {
+    opacity: 1;
+    transform: translateY(50px); }
+  100% {
+    opacity: 0;
+    transform: translateY(50px); } }
+
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); }
+  80% {
+    opacity: 1;
+    transform: translateY(50px); }
+  100% {
+    opacity: 0;
+    transform: translateY(50px); } }
+
+.arrows path.a1 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+  /* Safari and Chrome */ }
 
 .services {
   display: flex;
