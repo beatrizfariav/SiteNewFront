@@ -1401,7 +1401,7 @@ a:focus {
   font-weight: 900; }
 
 .faq .accordion .card .card-header h5 button.collapsed {
-  background: #ebebeb;
+  background: #f5f5f5;
   color: #263238;
   border-radius: 1rem;
   -webkit-box-shadow: none;
