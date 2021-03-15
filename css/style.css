@@ -873,8 +873,7 @@ body {
   position: relative;
   height: 50vh;
   overflow: hidden;
-  color: #ffffff;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
+  color: #ffffff; }
   .hero-secondary__wrap {
     width: 100%;
     height: 100%;
@@ -1446,3 +1445,78 @@ a:focus {
   border: 2px solid #008f95;
   background-color: transparent;
   color: #008f95; }
+
+.process {
+  font-family: Helvetica;
+  width: 75%;
+  margin: 0 0 0 12%; }
+
+.process-q {
+  border-top: 2px dashed;
+  border-color: #008f95 !important;
+  margin: 0;
+  padding: 3rem;
+  counter-increment: section;
+  position: relative; }
+  .process-q p {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    padding-top: 1rem; }
+
+.process-q span {
+  font-size: 2rem; }
+
+.process-q:nth-child(even):before {
+  content: counter(section);
+  right: 99%;
+  bottom: -10%;
+  margin-right: -2rem;
+  position: absolute;
+  border-radius: 50%;
+  padding: 1rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: #e24e42;
+  text-align: center;
+  color: white;
+  font-size: 1.9rem;
+  box-sizing: initial; }
+
+.process-q:nth-child(odd):before {
+  content: counter(section);
+  left: 99%;
+  bottom: -10%;
+  margin-left: -2rem;
+  position: absolute;
+  border-radius: 50%;
+  padding: 1rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: #e24e42;
+  text-align: center;
+  color: white;
+  font-size: 1.9rem;
+  box-sizing: initial; }
+
+.process-q:nth-child(even) {
+  border-left: 2px dashed;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  margin-right: 3rem;
+  padding-right: 0; }
+
+.process-q:nth-child(odd) {
+  border-right: 2px dashed;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  margin-left: 3rem;
+  padding-left: 0; }
+
+.process-q:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0; }
+
+.process-q:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }

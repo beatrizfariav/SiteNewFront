@@ -1,0 +1,84 @@
+.process {
+  font-family: Helvetica;
+  width: 75%;
+  margin: 0 0 0 12%;
+}
+
+.process-q {
+  border-top: 2px dashed;
+  border-color: $color-primary-blue !important;
+  margin: 0;
+  padding: 3rem;
+  counter-increment: section;
+  position: relative;
+
+  & p {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    padding-top: 1rem;
+  }
+}
+
+.process-q span {
+  font-size: 2rem;
+}
+
+.process-q:nth-child(even):before {
+  content: counter(section);
+  right: 99%;
+  bottom: -10%;
+  margin-right: -2rem;
+  position: absolute;
+  border-radius: 50%;
+  padding: 1rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: $color-primary-pink;
+  text-align: center;
+  color: white;
+  font-size: 1.9rem;
+  box-sizing: initial;
+}
+
+.process-q:nth-child(odd):before {
+  content: counter(section);
+  left: 99%;
+  bottom: -10%;
+  margin-left: -2rem;
+  position: absolute;
+  border-radius: 50%;
+  padding: 1rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: $color-primary-pink;
+  text-align: center;
+  color: white;
+  font-size: 1.9rem;
+  box-sizing: initial;
+}
+
+.process-q:nth-child(even) {
+  border-left: 2px dashed;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  margin-right: 3rem;
+  padding-right: 0;
+}
+
+.process-q:nth-child(odd) {
+  border-right: 2px dashed;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  margin-left: 3rem;
+  padding-left: 0;
+}
+.process-q:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.process-q:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
